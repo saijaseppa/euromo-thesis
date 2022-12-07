@@ -12,13 +12,11 @@ import OutletLegalOwnerForm from "./Basic-search/OuletLegalOwnerForm";
 const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypherForOutlet, formCypherForSubstring, formCypherForPerson, formCypherForLegalOwner, formCypherForOutletLegalOwner, makeVisualGraphWithAdvancedCypher }) => {
 
   const cypherFormRef = useRef();
-
   const [searchMode, setSearchMode] = useState(null);
 
   /* Function to make cypher call with two countries the user gave.  
-   Takes name's of the countries from state and sends them to App. */
+   Takes names of the countries from state and sends them to Start. */
   const searchTwoCountries = (country1, country2) => {
-    console.log('In Form: searching for', country1, country2);
     const search = {
       country1: capitalizeFirstLetter(country1),
       country2: capitalizeFirstLetter(country2)
@@ -28,9 +26,8 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
   }
 
   /* Function to make cypher call with names of person and outlet the user gave.  
-   Takes name's from state and sends them to App. */
+   Takes names from state and sends them to Start. */
   const searchPersonOutlet = (name, outlet) => {
-    console.log('In Form: searching for ', name, outlet);
     const search = {
       name: capitalizeFirstLetter(name),
       outlet: capitalizeFirstLetter(outlet)
@@ -39,6 +36,8 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
     cypherFormRef.current.toggleVisibility();
   }
 
+  /* Function to make cypher call with legal owner and outlet the user gave.  
+   Takes names from state and sends them to Start. */
   const searchOutletLegalOwner = (legal_owner, outlet) => {
     const search = {
       legal_owner: capitalizeFirstLetter(legal_owner),
@@ -48,8 +47,10 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
     cypherFormRef.current.toggleVisibility();
   }
 
+  /* Function to make cypher call with outlet the user gave. 
+   Type is telling the scope for search. 
+   Takes names from state and sends them to Start. */
   const searchOutlet = (outlet, type) => {
-    console.log('In Form: searching for ', outlet, type);
     const search = {
       outlet: capitalizeFirstLetter(outlet),
       type: type
@@ -58,8 +59,10 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
     cypherFormRef.current.toggleVisibility();
   }
 
+  /* Function to make cypher call with person name the user gave. 
+   Type is telling the scope for search. 
+   Takes names from state and sends them to Start. */
   const searchPerson = (name, type) => {
-    console.log('In Form: searching for ', name);
     const search = {
       name: capitalizeFirstLetter(name),
       type: type
@@ -68,8 +71,10 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
     cypherFormRef.current.toggleVisibility();
   }
 
+  /* Function to make cypher call with owner the user gave. 
+   Type is telling the scope for search. 
+   Takes names from state and sends them to Start. */
   const searchLegalOwner = (owner, type) => {
-    console.log('formissa', owner);
     const search = {
       owner: capitalizeFirstLetter(owner),
       type: type
@@ -78,6 +83,8 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
     cypherFormRef.current.toggleVisibility();
   }
 
+  /* Function to make cypher call with string the user gave.
+   Takes string from state and sends them to Start. */
   const searchSubstring = (word) => {
     const search = {
       word
@@ -86,10 +93,10 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
     cypherFormRef.current.toggleVisibility();
   }
 
+  /* Function to pass cypher to Start from advanced search. */
   const advancedCypher = (cypher) => {
     makeVisualGraphWithAdvancedCypher(cypher);
   }
-
 
   /* Function to capitalize the first letter of the word,
      needed in the names of the countries, persons and outlets. */
@@ -99,7 +106,7 @@ const Form = ({ formCypherForTwoCountries, formCypherForPersonOutlet, formCypher
 
   return (
     <div>
-      {/*<h3>Options: </h3>*/}
+      {<h3>Choose how to search: </h3>}
       <div className="btn-group">
         <button className="selectButton" onClick={(e) => setSearchMode('basic')}>Basic search</button>
         <br />
