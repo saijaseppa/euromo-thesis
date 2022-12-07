@@ -4,6 +4,20 @@ This is app I made with React for the constructive part of my thesis. At startin
 anyone can use and get some nice visualizations of data in Neo4j graph database. Data is collected as a part of a research in Europe, https://media-ownership.eu/. 
 All data is public information of media ownerships in Europe. 
 
+## About
+- Neovis.js is used to visualize data from database: https://github.com/neo4j-contrib/neovis.js
+- Used node version is 16.13.2 
+- Used npm version is 8.15.1
+
+#### What have I learned?
+- Project working with official style
+- To cut project in the small pieces
+
+#### Future development areas in project
+- Learning more about how make components re-usable
+- Developing even better accessibility
+- Notifications to user: success and error notifications
+
 
 ![neovisexample](https://user-images.githubusercontent.com/78361679/205669030-4b256d98-bd93-46a1-a416-02d7db4014ce.png)
 
