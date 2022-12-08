@@ -14,7 +14,7 @@ const OutletForm = ({ searchOutlet }) => {
     setSearchType("single")
   }
 
-  const handleSingleChange = (e) => {
+  const handleSingleChange = () => {
     setSearchType("single");
   }
   const handleImmediateChange = () => {
@@ -31,6 +31,7 @@ const OutletForm = ({ searchOutlet }) => {
         Name of the outlet:
         <br />
         <input
+          id="outletname"
           type="text"
           value={selectedOutlet}
           onChange={(e) => setSelectedOutlet(e.target.value)} />
@@ -49,7 +50,7 @@ const OutletForm = ({ searchOutlet }) => {
         value={searchType==="all"}
         onChange={handleAllChange} />
       <br />
-      <input type="submit" value="Search" />
+      <input id="submitoutlet" type="submit" value="Search" />
     </form>
   )
 }
