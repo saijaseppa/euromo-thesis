@@ -1,9 +1,24 @@
 ## EUROMO-THESIS
 
-This is app I made with React for the constructive part of my thesis. At starting point there was a wish of a website that 
-anyone can use and get some nice visualizations of data in Neo4j graph database. Data is collected as a part of a research in Europe, https://media-ownership.eu/. 
+This is app I made with React for the constructive part of my thesis. App is still in progress.  
+<br/>
+At starting point there was a wish of a website that anyone can use and get some nice visualizations of data in Neo4j graph database. Data is collected as a part of a research in Europe, https://media-ownership.eu/. 
 All data is public information of media ownerships in Europe. 
 
+## About
+- Neovis.js is used to visualize data from database: https://github.com/neo4j-contrib/neovis.js
+- Used node version is 16.13.2 
+- Used npm version is 8.15.1
+
+#### What have I learned?
+- Project working with official style
+- To cut project in the small pieces
+
+#### Future development areas in project
+- Learning more about how make components re-usable
+- Developing even better accessibility
+- Notifications to user: success and error notifications
+- Layout of the app is in progress and waiting instructions 
 
 ![neovisexample](https://user-images.githubusercontent.com/78361679/205669030-4b256d98-bd93-46a1-a416-02d7db4014ce.png)
 
@@ -13,6 +28,7 @@ All data is public information of media ownerships in Europe.
 2. Then "npm install" at the root of the project. 
 3. Create .env file on the root and fill in info of your database. Instructions below.
 4. 'Then "npm start". 
+5. You can search by last names of humans or names of different outlet or companys behind outlets. If you don't know exact name, you can use substring search under "Basic search". That way you can find out full names. 
 
 
 ## Connection works with AuraDb or Neo4j Desktop
