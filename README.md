@@ -9,6 +9,7 @@ All data is public information of media ownerships in Europe.
 - Neovis.js is used to visualize data from database: https://github.com/neo4j-contrib/neovis.js
 - Used node version is 16.13.2 
 - Used npm version is 8.15.1
+- e2e tests with Cypress
 
 #### What have I learned?
 - Project working with official style
@@ -19,6 +20,7 @@ All data is public information of media ownerships in Europe.
 - Developing even better accessibility
 - Notifications to user: success and error notifications
 - Layout of the app is in progress and waiting instructions 
+- More testing, unit tests and cypress
 
 ![neovisexample](https://user-images.githubusercontent.com/78361679/205669030-4b256d98-bd93-46a1-a416-02d7db4014ce.png)
 
