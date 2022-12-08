@@ -6,14 +6,16 @@ At starting point there was a wish of a website that anyone can use and get some
 All data is public information of media ownerships in Europe. 
 
 ## About
-- Neovis.js is used to visualize data from database: https://github.com/neo4j-contrib/neovis.js
-- Used node version is 16.13.2 
-- Used npm version is 8.15.1
+- Neovis.js is used to visualize data from database (https://github.com/neo4j-contrib/neovis.js)
+- Used node version 16.13.2 
+- Used npm version 8.15.1
 - e2e tests with Cypress
 
 #### What have I learned?
-- Project working with official style
+- Project working 
 - To cut project in the small pieces
+- Persistence to learn new things
+- Ways to learn completely new tool
 
 #### Future development areas in project
 - Learning more about how make components re-usable
@@ -25,6 +27,7 @@ All data is public information of media ownerships in Europe.
 ![neovisexample](https://user-images.githubusercontent.com/78361679/205669030-4b256d98-bd93-46a1-a416-02d7db4014ce.png)
 
 ## To get the project work
+To get project work, Neo4j database is needed. These instructions can be applied with correct database. 
 
 1. First copy this repo. 
 2. Then "npm install" at the root of the project. 
